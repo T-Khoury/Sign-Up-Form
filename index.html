@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
     <title>Sign-Up Form</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
         </div>
         <div class="input-form">
             <p>Let's do this!</p>
-            <form action="">
+            <form action="" >
                 <div class="first_name">
                     <label for="first_name">FIRST NAME</label>
                     <input type="text" name="first_name" id="first_name" required>
@@ -37,26 +38,25 @@
                 </div>
                 <div class="phone_number">
                     <label for="phone_number">PHONE NUMBER</label>
-                    <input type="tel" name="phone_number" id="phone_number" required>
+                    <input type="tel" name="phone_number" id="phone_number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
                 </div>
                 <div class="password">
-                    <label for="password">PASSWORD</label>'
+                    <label for="password">PASSWORD</label>
                     <input type="password" name="password" id="password" required>
                 </div>
                 <div class="confirm_password">
                     <label for="confirm-password">CONFIRM PASSWORD</label>
                     <input type="password" name="confirm_password" id="confirm_password" required>
                 </div>
+                <div class="create-account-button">
+                    <button type="submit">Submit</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </div>
             </form>
 
 
         </div>
-        <div class="create-account-button">
-            <button>
-
-            </button>
-            <p>Already have an account? <a href="">Log in</a></p>
-        </div>
+        
 
     </div>
 </body>
