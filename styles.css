@@ -1,24 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oxanium&family=Roboto:wght@500&family=Source+Sans+Pro&display=swap');
+
+@font-face {
+    font-family: header-font;
+    src: url(GajrajOne-Regular.ttf)
+}
+
+
+
+
 body {
     display: flex;
     width: 100vw;
     height: 100vh;
+    margin: 0;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+h1 {
+    align-self: center;
+    font-family: header-font;
+    letter-spacing: .2rem;
+    font-size: 3.5rem;
+    
 }
 
 
 
 
 .logo-section {
-    width: 40%;
+    width: 33vw;
     text-align: center;
     position: relative;
+    background: url(images/khamkeo-vilaysing-rpVQJbZMw8o-unsplash.jpg);
+    background-size: cover;
+    background-position: 0% 75%;
+    color: beige;
+}
+.sign-up-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    font-family: "Source Sans Pro";
 }
 
 .photo-credit {
     width: 100%;
     position: absolute;
     bottom: 10px;
+    right: 15%;
+    color: beige;
 
     
+}
 
-    
+.create-account-button,
+.instructions,
+.input-form {
+    flex-grow: 1;
+}
+
+.header {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 17vh;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20%;
+    background-color: rgba(0, 0, 0, 0.329);
 }
