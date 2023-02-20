@@ -1,6 +1,7 @@
 const password = document.getElementById('password');
 const confirmPassword = document.getElementById('confirm_password');
-const form = document.querySelector('form');
+
+const passwordWarning = document.querySelector('.p-warning')
 
 const passwordArray = {};
 
@@ -22,13 +23,24 @@ function checkMatch() {
     }
 }
 
+function warningMessage() {
+    if (password.getAttribute('class') == 'error') {
+        passwordWarning.textContent = '*Passwords do not match';
+    }
+    else {
+        passwordWarning.textContent = ''
+    }
+}
+
 confirmPassword.addEventListener('change', () => {
     getPassword();
     getPasswordConfirmation();
     checkMatch();
+    warningMessage();
 })
 password.addEventListener('change', () => {
     getPassword();
     getPasswordConfirmation();
     checkMatch();
+    warningMessage();
 })
