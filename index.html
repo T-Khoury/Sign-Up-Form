@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <!--<script src="scripts.js" defer></script> -->
+    <script src="scripts.js" defer></script>
     <title>Sign-Up Form</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
                 <h1>ODIN</h1>
                 <img src="images/odin-lined.png" alt="">
             </div>
-            <p class="photo-credit">Photo by</p>
+            <p class="photo-credit">Photo by <a href="https://unsplash.com/photos/rpVQJbZMw8o" class="image-credit">Khamkéo Vilaysing</a></p>
 
         </div>
     </div>
@@ -26,7 +26,7 @@
         </div>
         <div class="input-form">
             <p>Let's do this!</p>
-            <form action="" id="sign-up">
+            <form action="page_submission_URL" id="sign-up">
                 <div class="first_name">
                     <label for="first_name">FIRST NAME</label>
                     <input type="text" name="first_name" id="first_name" required>
@@ -41,11 +41,12 @@
                 </div>
                 <div class="phone_number">
                     <label for="phone_number">PHONE NUMBER</label>
-                    <input type="tel" name="phone_number" id="phone_number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+                    <input type="tel" name="phone_number" id="phone_number" placeholder="123-456-7890" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
                 </div>
                 <div class="password">
                     <label for="password">PASSWORD</label>
                     <input type="password" name="password" id="password" required>
+                    <span class="p-warning"></span>
                 </div>
                 <div class="confirm_password">
                     <label for="confirm-password">CONFIRM PASSWORD</label>
@@ -54,9 +55,12 @@
             </form>
         </div>
         <div class="create-account-button">
-            <button type="submit" form="sign-up">Submit</button>
-            <p>Already have an account? <a href="">Log in</a></p>
+            <div class="button-container">
+                <button type="submit" form="sign-up">Submit</button>
+                <p>Already have an account? <a href="" class="log-in">Log in</a></p>
+            </div>
         </div>
+
         
         
     </div>
